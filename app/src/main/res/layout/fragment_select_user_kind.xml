@@ -9,8 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="16dp"
         tools:listitem="@layout/user_kind_item"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

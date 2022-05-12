@@ -4,6 +4,7 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import br.ufpb.care.R
 import br.ufpb.care.databinding.UserKindItemBinding
 import br.ufpb.care.register.UserKind
 
@@ -44,7 +45,7 @@ class UserKindAdapter : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>
         holder.binding.apply {
             title.text = context.getString(kind.name)
             subtitle.text = context.getString(kind.description)
-            // icon. depois
+            icon.setImageResource(kind.icon)
         }
     }
 
