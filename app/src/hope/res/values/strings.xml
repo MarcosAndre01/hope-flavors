@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Hope</string>
+    <string name="dependente">Dependente</string>
+    <string name="dependente_descricao">Alguem que está dependente </string>
+    <string name="ex_dependente">Ex-dependente</string>
+    <string name="ex_dependente_descricao">Descrição aleatória</string>
 </resources>
