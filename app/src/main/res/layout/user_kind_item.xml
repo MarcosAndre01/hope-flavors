@@ -7,7 +7,10 @@
     android:orientation="vertical">
 
     <LinearLayout
-        style="@style/containerTipo">
+        android:id="@+id/background"
+        style="@style/containerTipo"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:id="@+id/icon"

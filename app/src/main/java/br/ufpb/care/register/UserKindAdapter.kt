@@ -12,6 +12,8 @@ class UserKindAdapter : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>
     class UserKindViewHolder(val binding: UserKindItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
+    private var selectedItemPosition: Int = 0
+
     private val diffCallback = object : DiffUtil.ItemCallback<UserKind>() {
         override fun areItemsTheSame(oldItem: UserKind, newItem: UserKind): Boolean {
             return oldItem.name == newItem.name
@@ -43,6 +45,17 @@ class UserKindAdapter : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>
         val context = holder.itemView.context
 
         holder.binding.apply {
+            background.setOnClickListener {
+                selectedItemPosition = holder.adapterPosition
+                notifyDataSetChanged()
+            }
+
+            val isSelected = selectedItemPosition == holder.adapterPosition
+            background.isPressed = isSelected
+            title.isPressed = isSelected
+            subtitle.isPressed = isSelected
+            icon.isPressed = isSelected
+
             title.text = context.getString(kind.name)
             subtitle.text = context.getString(kind.description)
             icon.setImageResource(kind.icon)
