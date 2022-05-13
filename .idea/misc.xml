@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/border_1.xml" value="0.16" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.35260416666666666" />
-        <entry key="app/src/main/res/layout/fragment_select_user_kind.xml" value="0.35260416666666666" />
-        <entry key="app/src/main/res/layout/test.xml" value="0.35260416666666666" />
-        <entry key="app/src/main/res/layout/user_kind_view_holder.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/drawable/boreder_button.xml" value="0.118" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/fragment_form_register.xml" value="0.264" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/fragment_select_user_kind.xml" value="0.2" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/fragment_sign_in.xml" value="0.175" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/fragment_signin.xml" value="0.175" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/test.xml" value="0.175" />
+        <entry key="..\:/Users/Windows/Desktop/Engenharia/Kotlin/hope-test-flavors/app/src/main/res/layout/user_kind_item.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33697916666666666" />
       </map>
     </option>
   </component>

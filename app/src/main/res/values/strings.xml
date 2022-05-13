@@ -6,4 +6,12 @@
     <string name="signin_button">Entrar</string>
     <string name="no_account">NÃO POSSUI CONTA?</string>
     <string name="create_account">Criar Conta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="preencha_as_informa_es_abaixo_para_finalizar_seu_cadastro">Preencha as informações abaixo para finalizar seu cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="idade">Idade</string>
+    <string name="finalizar_cadastro">Finalizar cadastro</string>
 </resources>
