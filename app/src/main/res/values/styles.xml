@@ -5,9 +5,9 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">16dp</item>
-        <item name="android:background">@drawable/border_1</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:padding">19dp</item>
+        <item name="android:background">@drawable/user_kind_background</item>
     </style>
 
     <style name="imgTipo">
@@ -25,19 +25,19 @@
     <style name="titleType">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/assistant_semibold</item>
+        <item name="android:textColor">@drawable/user_kind_text_color</item>
     </style>
 
     <style name="subtitleType">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">10dp</item>
-        <item name="android:textColor">#777</item>
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/assistant_semibold</item>
+        <item name="android:textColor">@drawable/user_kind_text_color</item>
     </style>
 
 </resources>
