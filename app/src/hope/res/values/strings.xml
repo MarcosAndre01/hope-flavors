@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Hope</string>
+    <string name="dependent">Dependente</string>
+    <string name="dependent_description">Sofro com dependência química e busco ajuda</string>
+    <string name="codependent">Codependente</string>
+    <string name="codependent_description">Quero ajudar um familiar ou amigo dependente</string>
+    <string name="ex_dependent">Ex-dependente</string>
+    <string name="ex_dependent_description">Saí do mundo das drogas e desejo ajudar outras pessoas</string>
+    <string name="specialist">Especialista</string>
+    <string name="specialist_description">Sou especialista e desejo ajudar mais pessoas</string>
+    <string name="communicator">Comunicador</string>
+    <string name="communicator_description">Desejo criar conteúdo para ajudar os usuários</string>
 </resources>
