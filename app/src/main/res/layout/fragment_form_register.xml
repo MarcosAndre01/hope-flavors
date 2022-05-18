@@ -1,92 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register.FormRegisterFragment">
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
 
-    <TextView
-        android:id="@+id/titleRegister"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/assistant_extrabold"
-        android:text="@string/cadastro"
-        android:textAlignment="textStart"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/subtitleRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/assistant_semibold"
-        android:text="@string/preencha_as_informa_es_abaixo_para_finalizar_seu_cadastro"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/titleRegister"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitleRegister">
-
-        <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="@string/nome" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_name">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <TextView
+            android:id="@+id/titleRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="@string/sobrenome" />
+            android:fontFamily="@font/assistant_extrabold"
+            android:text="@string/cadastro"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_last_name">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <TextView
+            android:id="@+id/subtitleRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="@string/idade" />
+            android:fontFamily="@font/assistant_semibold"
+            android:text="@string/preencha_as_informa_es_abaixo_para_finalizar_seu_cadastro"
+            android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:contentDescription="input-name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="20"
+                android:maxLength="30"
+                android:fontFamily="@font/assistant"
+                android:hint="@string/nome"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:contentDescription="input-lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:ems="20"
+                android:maxLength="30"
+                android:fontFamily="@font/assistant"
+                android:hint="@string/sobrenome"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:contentDescription="input-email"
+            style="@style/inputRegister"
+            android:fontFamily="@font/assistant"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:contentDescription="input-password"
+            style="@style/inputRegister"
+            android:fontFamily="@font/assistant"
+            android:autofillHints=""
+            android:hint="@string/senha_mais_de_6_caracteres"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:contentDescription="input-password2"
+            style="@style/inputRegister"
+            android:fontFamily="@font/assistant"
+            android:autofillHints=""
+            android:hint="@string/confirmar_senha"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAge"
+                android:contentDescription="input-age"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:maxLength="3"
+                android:ems="10"
+                android:hint="@string/idade"
+                android:fontFamily="@font/assistant"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextCPF"
+                android:contentDescription="input-cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="11"
+                android:hint="@string/cpf"
+                android:fontFamily="@font/assistant"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress"
+            android:contentDescription="input-cep"
+            style="@style/inputRegister"
+            android:autofillHints=""
+            android:maxLength="8"
+            android:hint="@string/cep"
+            android:fontFamily="@font/assistant"
+            android:inputType="textPostalAddress" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/next"
+        android:contentDescription="end-register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
         android:background="@drawable/border_button"
-        android:contentDescription="next-question"
-        android:fontFamily="@font/assistant_bold"
+        android:fontFamily="@font/assistant_extrabold"
         android:text="@string/finalizar_cadastro"
         android:textAllCaps="true"
         android:textColor="@color/white"
@@ -94,4 +159,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

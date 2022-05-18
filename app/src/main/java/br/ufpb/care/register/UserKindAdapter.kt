@@ -1,12 +1,10 @@
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import br.ufpb.care.R
 import br.ufpb.care.databinding.UserKindItemBinding
-import br.ufpb.care.register.UserKind
+import br.ufpb.care.register.model.UserKind
 
 class UserKindAdapter : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>() {
     class UserKindViewHolder(val binding: UserKindItemBinding) :

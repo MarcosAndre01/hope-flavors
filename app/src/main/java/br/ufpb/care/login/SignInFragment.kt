@@ -1,19 +1,16 @@
 package br.ufpb.care.login
 
-import android.app.FragmentContainer
 import android.os.Bundle
-import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavAction
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import br.ufpb.care.R
 import br.ufpb.care.databinding.FragmentSignInBinding
 
-class SigninFragment : Fragment() {
+class SignInFragment : Fragment() {
 
     private var _binding: FragmentSignInBinding? = null
     private val binding get() = _binding!!

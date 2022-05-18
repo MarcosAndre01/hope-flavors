@@ -40,4 +40,11 @@
         <item name="android:textColor">@drawable/user_kind_text_color</item>
     </style>
 
+    <style name="inputRegister">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:ems">10</item>
+    </style>
+
 </resources>

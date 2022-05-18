@@ -14,4 +14,10 @@
     <string name="sobrenome">Sobrenome</string>
     <string name="idade">Idade</string>
     <string name="finalizar_cadastro">Finalizar cadastro</string>
+    <string name="email">Email</string>
+    <string name="senha_mais_de_6_caracteres">Senha (mais de 6 caracteres)</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="cpf">CPF</string>
+    <string name="cep">CEP</string>
+    <string name="senhas_nao_sao_iguais">As senhas não são iguais</string>
 </resources>

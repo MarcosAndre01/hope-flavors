@@ -1,4 +1,4 @@
-package br.ufpb.care.register
+package br.ufpb.care.register.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
