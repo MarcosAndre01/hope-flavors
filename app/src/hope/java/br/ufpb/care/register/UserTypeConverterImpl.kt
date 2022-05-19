@@ -5,7 +5,7 @@ import br.ufpb.care.register.model.UserKind
 import br.ufpb.care.register.model.UserKindsImpl
 import java.lang.Exception
 
-class UserTypeConverterImpl : UserTypeConverter {
+object UserTypeConverterImpl : UserTypeConverter {
     override fun fromUserKind(kind: UserKind): UserType =
         when (kind) {
             UserKindsImpl.codependent -> UserType("Codependente")

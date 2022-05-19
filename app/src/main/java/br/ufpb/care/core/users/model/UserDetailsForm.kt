@@ -1,6 +1,6 @@
-package br.ufpb.care.register.model
+package br.ufpb.care.core.users.model
 
-data class UserDetails(
+data class UserDetailsForm(
     val addressZipcode: String,
     val cpf: String,
     val age: Int,

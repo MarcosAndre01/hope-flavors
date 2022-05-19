@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.navGraphViewModels
 import br.ufpb.care.R
 import br.ufpb.care.databinding.FragmentFormRegisterBinding
-import br.ufpb.care.register.model.UserDetails
+import br.ufpb.care.core.users.model.UserDetailsForm
 
 class FormRegisterFragment : Fragment() {
 
@@ -61,7 +61,7 @@ class FormRegisterFragment : Fragment() {
             }
 
             viewModel.submitUserDetails(
-                UserDetails(
+                UserDetailsForm(
                     addressZipcode = binding.editTextTextPostalAddress.text.toString(),
                     cpf = binding.editTextCPF.text.toString(),
                     age = binding.editTextAge.text.toString().toInt(),
