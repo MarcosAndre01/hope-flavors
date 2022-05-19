@@ -6,28 +6,12 @@
     app:startDestination="@id/signinFragment">
 
     <fragment
-        android:id="@+id/selectUserKindFragment"
-        android:name="br.ufpb.care.register.SelectUserKindFragment"
-        android:label="SelectUserKindFragment" >
-        <action
-            android:id="@+id/action_selectUserKindFragment_to_formRegisterFragment"
-            app:destination="@id/formRegisterFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/formRegisterFragment"
-        android:name="br.ufpb.care.register.formregister.FormRegisterFragment"
-        android:label="fragment_form_register"
-        tools:layout="@layout/fragment_form_register" >
-        <argument
-            android:name="Type"
-            app:argType="br.ufpb.care.core.users.model.Type" />
-    </fragment>
-    <fragment
         android:id="@+id/signinFragment"
         android:name="br.ufpb.care.login.SignInFragment"
         android:label="SigninFragment" >
         <action
-            android:id="@+id/action_signinFragment_to_selectUserKindFragment"
-            app:destination="@id/selectUserKindFragment" />
+            android:id="@+id/action_signinFragment_to_register"
+            app:destination="@id/register_navigation" />
     </fragment>
+    <include app:graph="@navigation/register_navigation" />
 </navigation>

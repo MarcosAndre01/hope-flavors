@@ -26,13 +26,13 @@ class SignInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setListiners()
+        setListeners()
     }
 
-    private fun setListiners() {
+    private fun setListeners() {
 
         binding.buttonRegister.setOnClickListener {
-            findNavController().navigate(NavAction(R.id.action_signinFragment_to_selectUserKindFragment).destinationId)
+            findNavController().navigate(NavAction(R.id.action_signinFragment_to_register).destinationId)
         }
     }
 }

@@ -13,11 +13,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import br.ufpb.care.R
 import br.ufpb.care.core.users.model.Type
 import br.ufpb.care.databinding.FragmentSelectUserKindBinding
+import br.ufpb.care.register.model.UserKind
+import br.ufpb.care.register.model.UserKinds
 
 class SelectUserKindFragment : Fragment() {
 
     private lateinit var binding: FragmentSelectUserKindBinding
-    private lateinit var typeNameArgument: String
+    private lateinit var selectedUserKind: UserKind
     private val adapter = UserKindAdapter(::onCardClicked)
 
     override fun onCreateView(
@@ -39,17 +41,15 @@ class SelectUserKindFragment : Fragment() {
         setListeners()
     }
 
-    private fun onCardClicked(typeName: String){
-        typeNameArgument = typeName
+    private fun onCardClicked(kind: UserKind) {
+        selectedUserKind = kind
     }
 
-    private fun setListeners(){
+    private fun setListeners() {
         binding.next.setOnClickListener {
-            val argument = Type(typeNameArgument)
-            val action = SelectUserKindFragmentDirections.actionSelectUserKindFragmentToFormRegisterFragment(
-                type = argument
-            )
-           findNavController().navigate(action)
+            val action =
+                SelectUserKindFragmentDirections.actionSelectUserKindFragmentToFormFragment()
+            findNavController().navigate(action)
         }
     }
 }

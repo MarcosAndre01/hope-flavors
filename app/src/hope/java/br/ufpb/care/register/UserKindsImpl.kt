@@ -1,6 +1,8 @@
 package br.ufpb.care.register
 
 import br.ufpb.care.R
+import br.ufpb.care.register.model.UserKind
+import br.ufpb.care.register.model.UserKinds
 
 class UserKindsImpl : UserKinds {
     private val dependent = UserKind(name = R.string.dependent, description = R.string.dependent_description, icon = R.drawable.dependent)

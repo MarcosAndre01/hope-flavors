@@ -7,10 +7,8 @@ import br.ufpb.care.core.users.model.User
 import kotlinx.coroutines.launch
 
 class FormRegisterViewModelImp(
-    val usersRepository: UsersRepository
+    private val usersRepository: UsersRepository
 ): ViewModel() {
-
-
     fun submitUserDetails(mUser: User){
         viewModelScope.launch {
             usersRepository.register(mUser)

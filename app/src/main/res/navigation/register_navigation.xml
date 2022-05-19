@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_navigation"
+    app:startDestination="@id/selectUserKindFragment">
+
+    <fragment
+        android:id="@+id/selectUserKindFragment"
+        android:name="br.ufpb.care.register.SelectUserKindFragment"
+        android:label="SelectUserKindFragment" >
+        <action
+            android:id="@+id/action_selectUserKindFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="br.ufpb.care.register.FormFragment"
+        android:label="FormFragment" />
+</navigation>
