@@ -1,4 +1,4 @@
-package br.ufpb.care.register
+package br.ufpb.care.register.formregister
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

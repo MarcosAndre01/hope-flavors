@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/formRegisterFragment"
-        android:name="br.ufpb.care.register.FormRegisterFragment"
+        android:name="br.ufpb.care.register.formregister.FormRegisterFragment"
         android:label="fragment_form_register"
         tools:layout="@layout/fragment_form_register" >
         <argument

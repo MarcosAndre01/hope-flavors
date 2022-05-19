@@ -1,4 +1,4 @@
-package br.ufpb.care.core.users.data
+package br.ufpb.care.core.users.data.remote.repository
 
 import br.ufpb.care.core.users.data.remote.UsersRemoteDataSource
 import br.ufpb.care.core.users.data.remote.dto.UserRequest

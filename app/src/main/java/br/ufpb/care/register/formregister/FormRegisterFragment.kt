@@ -1,4 +1,4 @@
-package br.ufpb.care.register
+package br.ufpb.care.register.formregister
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
-import androidx.navigation.NavArgs
 import androidx.navigation.fragment.navArgs
 import br.ufpb.care.R
 import br.ufpb.care.core.users.data.UsersRepository
 import br.ufpb.care.core.users.data.remote.UsersFakeDataSource
-import br.ufpb.care.core.users.data.remote.UsersRemoteDataSource
 import br.ufpb.care.core.users.model.User
 import br.ufpb.care.databinding.FragmentFormRegisterBinding
 
