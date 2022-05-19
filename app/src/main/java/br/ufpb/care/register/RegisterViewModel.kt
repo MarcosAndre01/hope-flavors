@@ -10,7 +10,7 @@ import br.ufpb.care.register.model.UserKind
 private const val TAG = "RegisterViewModel"
 
 class RegisterViewModel(
-    private val repository: UsersRepository = UsersRepository(
+    private val userRepository: UsersRepository = UsersRepository(
         UsersFakeDataSource()
     )
 ) : ViewModel() {
@@ -18,10 +18,10 @@ class RegisterViewModel(
 
     fun selectUserKind(kind: UserKind) {
         selectedUserKind = kind
-        Log.d(TAG, "selectUserKind: ${selectedUserKind}")
+        Log.d(TAG, "selectUserKind: $selectedUserKind")
     }
 
     fun submitUserDetails(userDetails: UserDetails) {
-
+        Log.d(TAG, "submitUserDetails: $userDetails")
     }
 }

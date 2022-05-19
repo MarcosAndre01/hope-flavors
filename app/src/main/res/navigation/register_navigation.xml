@@ -14,6 +14,6 @@
     </fragment>
     <fragment
         android:id="@+id/formFragment"
-        android:name="br.ufpb.care.register.FormFragment"
+        android:name="br.ufpb.care.register.FormRegisterFragment"
         android:label="FormFragment" />
 </navigation>

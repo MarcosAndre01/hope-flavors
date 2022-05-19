@@ -1,7 +1,7 @@
 package br.ufpb.care.register.model
 
 data class UserDetails(
-    val addressZipCode: String,
+    val addressZipcode: String,
     val cpf: String,
     val age: Int,
     val firstName: String,

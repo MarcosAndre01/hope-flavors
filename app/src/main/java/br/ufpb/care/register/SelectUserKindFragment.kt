@@ -6,16 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavAction
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.ufpb.care.R
-import br.ufpb.care.core.users.model.Type
 import br.ufpb.care.databinding.FragmentSelectUserKindBinding
 import br.ufpb.care.register.model.UserKind
-import br.ufpb.care.register.model.UserKinds
 
 class SelectUserKindFragment : Fragment() {
 
