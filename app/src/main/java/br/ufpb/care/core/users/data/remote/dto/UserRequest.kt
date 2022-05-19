@@ -14,5 +14,5 @@ data class UserRequest(
     @SerializedName("formID") val formID: String,
     @SerializedName("address_country") val addressCountry: String,
     @SerializedName("address_zipcode") val addressZipCode: String,
-    @SerializedName("validateUser") val validateUser: ValidateUser
+    @SerializedName("validateUser") val validateUser: ValidateUser?
 )

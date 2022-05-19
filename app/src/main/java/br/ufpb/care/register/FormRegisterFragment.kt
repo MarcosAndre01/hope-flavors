@@ -18,9 +18,9 @@ import br.ufpb.care.databinding.FragmentFormRegisterBinding
 
 class FormRegisterFragment : Fragment() {
 
-    private val args = FormRegisterFragment().arguments
     private var _binding: FragmentFormRegisterBinding? = null
     private val binding get() = _binding!!
+    private val args: FormRegisterFragmentArgs by navArgs()
     private val viewModel: FormRegisterViewModelImp by viewModels{
         FormRegisterViewModelFactory(UsersRepository(UsersFakeDataSource()))
     }
@@ -35,6 +35,8 @@ class FormRegisterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setListeners()
     }
 
     private fun setListeners(){
@@ -52,10 +54,12 @@ class FormRegisterFragment : Fragment() {
                     validateUser = null,
                     userType = args.type
                 )
+
+                viewModel.submitUserDetails(user)
             }else{
                 Toast.makeText(requireContext(), getString(R.string.senhas_nao_sao_iguais),Toast.LENGTH_SHORT).show()
             }
-            viewModel.submitUserDetails(user)
+
         }
     }
 

@@ -2,7 +2,9 @@ package br.ufpb.care.core.users.data
 
 import br.ufpb.care.core.users.data.remote.UsersRemoteDataSource
 import br.ufpb.care.core.users.data.remote.dto.UserRequest
+import br.ufpb.care.core.users.data.remote.dto.ValidateUser
 import br.ufpb.care.core.users.model.User
+import com.google.gson.annotations.SerializedName
 
 class UsersRepository(private val usersRemoteDataSource: UsersRemoteDataSource) {
     suspend fun register(user: User) {
@@ -16,10 +18,17 @@ class UsersRepository(private val usersRemoteDataSource: UsersRemoteDataSource) 
 
 private fun User.toUserDto() : UserRequest {
     return UserRequest(
-        id = id,
-        userTypeID = type.name,
-        email = email,
-        firstName = firstName,
-        lastName = lastName,
+        firstName,
+        lastName,
+        email,
+        age,
+        password,
+        imageUrl,
+        userTypeID = userType.name,
+        cpf,
+        formID,
+        addressCountry,
+        addressZipCode = addressZipcode,
+        validateUser = validateUser
     )
 }

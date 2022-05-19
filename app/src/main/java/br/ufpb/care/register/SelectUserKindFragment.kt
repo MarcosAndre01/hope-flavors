@@ -11,12 +11,14 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.ufpb.care.R
+import br.ufpb.care.core.users.model.Type
 import br.ufpb.care.databinding.FragmentSelectUserKindBinding
 
 class SelectUserKindFragment : Fragment() {
 
     private lateinit var binding: FragmentSelectUserKindBinding
-    private val adapter = UserKindAdapter()
+    private lateinit var typeNameArgument: String
+    private val adapter = UserKindAdapter(::onCardClicked)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,9 +39,17 @@ class SelectUserKindFragment : Fragment() {
         setListeners()
     }
 
+    private fun onCardClicked(typeName: String){
+        typeNameArgument = typeName
+    }
+
     private fun setListeners(){
         binding.next.setOnClickListener {
-           findNavController().navigate(NavAction(R.id.action_selectUserKindFragment_to_formRegisterFragment).destinationId)
+            val argument = Type(typeNameArgument)
+            val action = SelectUserKindFragmentDirections.actionSelectUserKindFragmentToFormRegisterFragment(
+                type = argument
+            )
+           findNavController().navigate(action)
         }
     }
 }
