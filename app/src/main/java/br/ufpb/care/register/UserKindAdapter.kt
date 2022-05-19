@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import br.ufpb.care.databinding.UserKindItemBinding
 import br.ufpb.care.register.model.UserKind
 
-class UserKindAdapter(val onCardClicked: (kind: UserKind) -> Unit) : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>() {
-    class UserKindViewHolder(val binding: UserKindItemBinding, val onCardClicked: (kind: UserKind) -> Unit) :
+class UserKindAdapter(val onUserKindSelected: (kind: UserKind) -> Unit) : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>() {
+    class UserKindViewHolder(val binding: UserKindItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     private var selectedItemPosition: Int = 0
@@ -38,7 +38,7 @@ class UserKindAdapter(val onCardClicked: (kind: UserKind) -> Unit) : RecyclerVie
                 parent,
                 false
             )
-        ) { kind -> onCardClicked(kind) }
+        )
     }
     override fun onBindViewHolder(holder: UserKindViewHolder, position: Int) {
         val kind = userKinds[position]
@@ -47,11 +47,14 @@ class UserKindAdapter(val onCardClicked: (kind: UserKind) -> Unit) : RecyclerVie
         holder.binding.apply {
             background.setOnClickListener {
                 selectedItemPosition = holder.adapterPosition
-                onCardClicked(kind)
                 notifyDataSetChanged()
             }
 
             val isSelected = selectedItemPosition == holder.adapterPosition
+            if (isSelected) {
+                onUserKindSelected(kind)
+            }
+
             background.isPressed = isSelected
             title.isPressed = isSelected
             subtitle.isPressed = isSelected

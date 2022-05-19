@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavAction
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.ufpb.care.R
 import br.ufpb.care.core.users.model.Type
@@ -19,8 +20,8 @@ import br.ufpb.care.register.model.UserKinds
 class SelectUserKindFragment : Fragment() {
 
     private lateinit var binding: FragmentSelectUserKindBinding
-    private lateinit var selectedUserKind: UserKind
     private val adapter = UserKindAdapter(::onCardClicked)
+    private val viewModel: RegisterViewModel by navGraphViewModels(R.id.register_navigation)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,11 +39,12 @@ class SelectUserKindFragment : Fragment() {
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         adapter.userKinds = UserKindsImpl().value
+
         setListeners()
     }
 
     private fun onCardClicked(kind: UserKind) {
-        selectedUserKind = kind
+        viewModel.selectUserKind(kind)
     }
 
     private fun setListeners() {
