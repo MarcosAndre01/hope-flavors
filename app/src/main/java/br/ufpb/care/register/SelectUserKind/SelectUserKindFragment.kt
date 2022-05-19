@@ -1,6 +1,5 @@
-package br.ufpb.care.register
+package br.ufpb.care.register.SelectUserKind
 
-import UserKindAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +10,7 @@ import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.ufpb.care.R
 import br.ufpb.care.databinding.FragmentSelectUserKindBinding
+import br.ufpb.care.register.RegisterViewModel
 import br.ufpb.care.register.model.UserKind
 import br.ufpb.care.register.model.UserKindsImpl
 

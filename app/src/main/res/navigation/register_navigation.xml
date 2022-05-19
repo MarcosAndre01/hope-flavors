@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/selectUserKindFragment"
-        android:name="br.ufpb.care.register.SelectUserKindFragment"
+        android:name="br.ufpb.care.register.SelectUserKind.SelectUserKindFragment"
         android:label="SelectUserKindFragment" >
         <action
             android:id="@+id/action_selectUserKindFragment_to_formFragment"

@@ -10,6 +10,7 @@ import androidx.navigation.navGraphViewModels
 import br.ufpb.care.R
 import br.ufpb.care.databinding.FragmentFormRegisterBinding
 import br.ufpb.care.core.users.model.UserDetailsForm
+import br.ufpb.care.extension.showMessage
 
 class FormRegisterFragment : Fragment() {
 
@@ -33,12 +34,18 @@ class FormRegisterFragment : Fragment() {
 
     private fun setListeners() {
         binding.next.setOnClickListener {
+            val userDetails = UserDetailsForm(
+                addressZipcode = binding.editTextTextPostalAddress.text.toString(),
+                cpf = binding.editTextCPF.text.toString(),
+                age = binding.editTextAge.text.toString().toInt(),
+                firstName = binding.editTextName.text.toString(),
+                lastName = binding.editTextLastName.text.toString(),
+                email = binding.editTextTextEmailAddress.text.toString(),
+                password = binding.editTextTextPassword2.text.toString()
+            )
+
             if (binding.editTextTextPassword.text.toString() != binding.editTextTextPassword2.text.toString()) {
-                Toast.makeText(
-                    requireContext(),
-                    getString(R.string.senhas_nao_sao_iguais),
-                    Toast.LENGTH_SHORT
-                ).show()
+                getString(R.string.senhas_nao_sao_iguais).showMessage(context)
 
                 return@setOnClickListener
             }
@@ -50,28 +57,12 @@ class FormRegisterFragment : Fragment() {
                 binding.editTextCPF.text.toString().isBlank() ||
                 binding.editTextTextPostalAddress.text.toString().isBlank()
             ) {
-
-                Toast.makeText(
-                    requireContext(),
-                    getString(R.string.preencha_todos_campos),
-                    Toast.LENGTH_SHORT
-                ).show()
+                getString(R.string.preencha_todos_campos).showMessage(context)
 
                 return@setOnClickListener
             }
-
-            viewModel.submitUserDetails(
-                UserDetailsForm(
-                    addressZipcode = binding.editTextTextPostalAddress.text.toString(),
-                    cpf = binding.editTextCPF.text.toString(),
-                    age = binding.editTextAge.text.toString().toInt(),
-                    firstName = binding.editTextName.text.toString(),
-                    lastName = binding.editTextLastName.text.toString(),
-                    email = binding.editTextTextEmailAddress.text.toString(),
-                    password = binding.editTextTextPassword2.text.toString()
-                )
-            )
+            viewModel.submitUserDetails(userDetails)
         }
     }
-
+    
 }
