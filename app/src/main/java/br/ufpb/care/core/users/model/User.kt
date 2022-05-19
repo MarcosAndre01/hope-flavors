@@ -22,6 +22,6 @@ data class User(
     val password: String,
     val playerId: String? = "",
     val score: Int = 0,
-    val userType: Type,
+    val userType: UserType,
     val validateUser: ValidateUser? = null
 )

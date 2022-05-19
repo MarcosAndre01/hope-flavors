@@ -5,9 +5,8 @@ import kotlinx.parcelize.Parcelize
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
-@Parcelize
 data class UserKind(
     @StringRes val name: Int,
     @StringRes val description: Int,
     @DrawableRes val icon: Int,
-) : Parcelable
+)
