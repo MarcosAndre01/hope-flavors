@@ -3,7 +3,7 @@
     <string name="patient">Paciente</string>
     <string name="patient_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
     <string name="caregiver">Cuidador</string>
-    <string name="caregiver_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="caregiver_description">Quero auxiliar fornecendo conforto e bem-estar aos paciente</string>
     <string name="support_group">Grupo de Apoio</string>
     <string name="support_group_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
 </resources>
