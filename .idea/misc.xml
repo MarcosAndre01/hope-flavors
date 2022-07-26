@@ -15,6 +15,7 @@
         <entry key="app/src/hope/res/drawable/communicator.xml" value="0.2975" />
         <entry key="app/src/hope/res/drawable/dependent.xml" value="0.2975" />
         <entry key="app/src/hope/res/drawable/ex_dependent.xml" value="0.2975" />
+        <entry key="app/src/main/res/drawable/border_button.xml" value="0.2975" />
         <entry key="app/src/main/res/drawable/user_kind_background.xml" value="0.2975" />
         <entry key="app/src/main/res/drawable/user_kind_text_color.xml" value="0.2975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33697916666666666" />

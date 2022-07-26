@@ -3,21 +3,4 @@
     <color name="colorPrimary">#EDE1FF</color>
     <color name="colorPrimaryDark">#4507A1</color>
     <color name="colorPrimaryLight">#EDE1FF</color>
-    <color name="colorAccent">#03DAC5</color>
-    <color name="color_3">#E2EAF1</color>
-    <color name="color_5">#A6BECF</color>
-    <color name="black_50">#80000000</color>
-    <color name="white">#FFFFFF</color>
-    <color name="RED">#cb0000</color>
-    <color name="BLUE">#2d9fdc</color>
-    <color name="YELLOW">#d4aa05</color>
-    <color name="GREEN">#0bb481</color>
-    <color name="gray">#777</color>
-    <color name="black">#111</color>
-    <color name="border_cards">#A6BECF</color>
-    <color name="title_card">#243336</color>
-    <color name="text_card">#243336a9</color>
-    <color name="text_card_specialist">#243336a9</color>
-    <color name="background_input_sos">#E2EBF2</color>
-
 </resources>
