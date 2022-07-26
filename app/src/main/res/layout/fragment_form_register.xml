@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/assistant_extrabold"
-        android:text="@string/cadastro"
+        android:text="@string/registration_title"
         android:textAlignment="textStart"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="28sp"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/assistant_semibold"
-        android:text="@string/preencha_as_informa_es_abaixo_para_finalizar_seu_cadastro"
+        android:text="@string/registration_description"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/titleRegister"
         tools:layout_editor_absoluteX="16dp" />
@@ -43,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="@string/nome" />
+        android:hint="@string/first_name" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="@string/sobrenome" />
+            android:hint="@string/last_name" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="@string/idade" />
+            android:hint="@string/age" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,9 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/border_button"
-        android:contentDescription="next-question"
         android:fontFamily="@font/assistant_bold"
-        android:text="@string/finalizar_cadastro"
+        android:text="@string/complete_signup"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textStyle="bold"

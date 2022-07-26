@@ -1,17 +1,15 @@
 <resources>
     <string name="app_name">Care Network</string>
-    <string name="texto_novo">Outro texto!</string>
     <string name="username_hint">Usuário</string>
     <string name="password_hint">Senha</string>
     <string name="signin_button">Entrar</string>
     <string name="no_account">NÃO POSSUI CONTA?</string>
     <string name="create_account">Criar Conta</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="cadastro">Cadastro</string>
-    <string name="preencha_as_informa_es_abaixo_para_finalizar_seu_cadastro">Preencha as informações abaixo para finalizar seu cadastro</string>
-    <string name="nome">Nome</string>
-    <string name="sobrenome">Sobrenome</string>
-    <string name="idade">Idade</string>
-    <string name="finalizar_cadastro">Finalizar cadastro</string>
+    <string name="registration_title">Cadastro</string>
+    <string name="registration_description">Preencha as informações abaixo para finalizar seu cadastro</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="age">Idade</string>
+    <string name="complete_signup">Finalizar cadastro</string>
+    <string name="next_question">Próxima</string>
 </resources>

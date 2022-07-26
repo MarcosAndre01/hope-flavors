@@ -51,10 +51,10 @@ class UserKindAdapter : RecyclerView.Adapter<UserKindAdapter.UserKindViewHolder>
             }
 
             val isSelected = selectedItemPosition == holder.adapterPosition
-            background.isPressed = isSelected
-            title.isPressed = isSelected
-            subtitle.isPressed = isSelected
-            icon.isPressed = isSelected
+            background.isSelected = isSelected
+            title.isSelected = isSelected
+            subtitle.isSelected = isSelected
+            icon.isSelected = isSelected
 
             title.text = context.getString(kind.name)
             subtitle.text = context.getString(kind.description)
